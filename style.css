@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+header, .offers {
+    background: radial-gradient(#fff, #ffd8dc);
+}
+
+.coupon {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 80px;
+    margin-bottom: 50px;
+}
+
+.nav-left a img {
+    width: 150px;
+}
+
+
+ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 15px;
+}
+
+ul li i {
+    font-size: 35px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 80px;
+    margin-bottom: 50px;
+}
+
+.hero-left {
+    width: 500px;
+}
+
+.hero-left > h1 {
+    font-size: 40px;
+}
+
+.hero-right > img {
+    width: 500px;
+}
+
+.hero-left > button, .btn-offer, .btn-cart {
+    border: none;
+    background-color: orangered;
+    color: white;
+    padding: 8px 15px;
+    display: flex;
+    gap: 5px;
+    border-radius: 17px;
+    cursor: pointer;
+}
+
+.hero-left > h1, .hero-left > p {
+    margin: 20px 0px; 
+}
+
+.btn-hero > i {
+    font-size: 18px;
+}
+
+.btn-hero:hover, .btn-offer:hover, .btn-cart:hover {
+    background-color: rgb(174, 69, 32);
+}
+
+.btn-hero, .btn-offer {
+    transition: background-color 0.15s;
+}
+
+.products-container {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}
+
+.featured, .latest-products {
+    padding: 0px 80px;
+    margin-bottom: 80px;
+}
+
+.featured > h2, .latest-products > h2 {
+    text-align: center;
+    margin-bottom: 60px;
+    text-decoration: underline solid orangered 5px;
+    text-underline-offset: 10px;
+    
+}
+
+.item {
+    width: 20%;
+    margin-bottom: 50px;
+    cursor: pointer;
+    transition: transform 0.15s;
+}
+
+.item:hover {
+    transform: translateY(-8px);
+}
+
+.item > a > img, .item > p, .ratings {
+    margin-bottom: 3px;
+}
+
+.item > a > img {
+    width: 250px;
+}
+
+.ratings > i {
+    color: orangered;
+}
+
+
+.all-latest {
+    flex-wrap: wrap;
+} 
+
+.offers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 250px;
+    margin-bottom: 50px;
+}
+
+.offer-image-section > img {
+    width: 400px;
+}
+
+
+.offer-content-section > p {
+    margin-bottom: 15px;
+    line-height: 25px;
+}
+
+.offer-content-section > h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.reviews {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    padding: 0 80px;
+    margin-bottom: 50px;
+}
+
+.card {
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.card > div  {
+    margin-bottom: 15px;
+}
+
+.card > img {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+
+.quotes {
+    font-size: 30px;
+    color: orangered;
+}
+
+.review > p {
+    font-size: 14px;
+    text-align: center;
+}
+
+
+.user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user > img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 10px;
+}
+
+.brands {
+    display: flex;
+    padding: 0px 80px;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+
+.brands a img  {
+    filter: grayscale(100%);
+}
+
+.brands a img:hover {
+    filter: grayscale(0%);
+} 
+
+.footer {
+    display: flex;
+    background-color: white;
+    padding: 50px 80px;
+    background-color: black;
+    gap: 25px;
+}
+
+.app-logos {
+    display: flex;
+    gap: 5px;
+}
+
+.app-section > h3, .links > h3, .social > h3 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.app-section > p, .footer-hero > p, .links > a, .social > a {
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.app-logos a img {
+    width: 180px;
+}
+
+.footer-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-hero > p {
+    text-align: center;
+    line-height: 20px;
+}
+
+.footer-hero a img {
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+
+
+.footer-hero, .links, .social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.app-section, .links, .social {
+    width: 33%;
+}
+
+.footer-hero {
+    width: 50%;
+}
+
+.navigation {
+    display: flex;
+    padding: 0 80px;
+}
+
+.navigation > a {
+    border: 1px orangered solid;
+    padding: 20px 20px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation > a:hover{
+    background-color: orangered;
+    color: white;
+}
+
+.nav-box > a {
+    font-size: 18px;
+}
+
+.product-container {
+    display: flex;
+    justify-content: center;
+    padding: 0px 40px;
+    gap: 20px;
+}
+
+.product-title {
+    font-weight: bold;
+    font-size: 55px;
+}
+
+.price {
+    font-weight: bold;
+    color: gray;
+}
+
+.product-contents {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 30%;
+}
+
+
+.product-contents > form {
+    display: flex;
+    gap: 15px;
+}
+
+.product-contents > p {
+    line-height: 22px;
+}
+
+.quantity {
+    width: 100px;
+    text-align: center;
+    font-size: 20px;
+    border: 1px solid orangered;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-right {
+    display: flex;
+    gap: 10px;
+}
+
+.icons a img {
+    width: 28px;
+}
+
+.menu-icon {
+    display: none;
+}
+
+
+@media screen and (max-width: 800px) {
+    .nav-right ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 120px;
+        background-color: #333;
+        left: 0px;
+        width: 100%;
+    }
+
+    .nav-right ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .nav-right ul li a {
+        color: #fff;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
+
+
+
